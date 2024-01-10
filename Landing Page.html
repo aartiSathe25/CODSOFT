@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Pepsi Website Landing Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="sec">
+	<header>
+	<a href="#"><img src="C:\Users\Shivaji Sathe\Downloads\logo.png" class="logo"></a>
+	<ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Products</a></li>
+	<li><a href="#">What's New</a></li>
+	<li><a href="#">Newsletter</a></li>
+	<li><a href="#">Contact</a></li>
+	</ul>
+	</header>
+	<div class="content">
+		<div class="textBox">
+	<h2>Global Leader in Convenient Foods<br><span>I Like</span></h2>
+	<p>
+	PepsiCo products are enjoyed by consumers more than one billion times a day in more than 200 countries and territories around the world. PepsiCo generated $86 billion in net revenue in 2022, driven by a complementary beverage and convenient foods portfolio that includes Lay's, Doritos, Cheetos, Gatorade, Pepsi-Cola, Mountain Dew, Quaker and SodaStream. PepsiCo's product portfolio includes a wide range of enjoyable foods and beverages, including many iconic brands that generate more than $1 billion each in estimated annual retail sales.
+	</p>
+<a href="#">View All Products</a>
+	</div>
+	<div class="imgBox">
+		<img src="C:\Users\Shivaji Sathe\Downloads\pepsi001.png" class="pepsi">
+	</div>
+</div>
+
+<ul class="thumb">
+	<li><img src='C:\Users\Shivaji Sathe\Downloads\pepsi001.png' onclick="changeBgColor('green')"></li>
+
+	<li><img src='C:\Users\Shivaji Sathe\Downloads\pepsi002.png' 
+onclick="changeBgColor('black')"></li>
+
+	<li><img src='C:\Users\Shivaji Sathe\Downloads\pepsi003.png' 
+ onclick="changeBgColor('red')"></li>
+</ul>
+
+<ul class="sci">
+	<li><a href="#"><img src="C:\Users\Shivaji Sathe\Downloads\facebook.png"></a></li>
+	<li><a href="#"><img src="C:\Users\Shivaji Sathe\Downloads\twitter.png"></a></li>
+	<li><a href="#"><img src="C:\Users\Shivaji Sathe\Downloads\instagram.png"></a></li>
+</ul>
+</section>
+
+<script type="text/javascript">
+	function changeBgColor(color){
+		const sec = document.querySelector('.sec');
+		sec.style.background =  color;
+	}
+</script>
+</body>
+</html>

@@ -1,50 +1,139 @@
-<!---------------------------Calculator--------------------------------->
+<!----------Landing Page------------------!>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+section{
+	position: relatives;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	aligns-items: center;
+	background: blue;
+	transition: 0.5s;
+}
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo{
+	position: relative;
+	max-width: 80px;
+}
+header ul{
+	position: relative;
+	display:flex;
+}
+header ul li{
+	list-style: none;
+}
+header ul li a{
+	display: inline-block;
+	color: white;
+	font-weight: 400;
+	margin-left: 40px;
+	text-decoration: none;
+}
+.content{
+	position: relative;
+	width: 100%;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content .textBox{
+	position: relative;
+	max-width: 600px;
+}
 
-h1 {  
-    text-align: center;  
-    padding: 23px;  
-    background-color: black;
-    color: white;  
-    }  
-  
-#clear{  
-width: 270px;  
-border: 3px solid gray;  
-    border-radius: 3px;  
-    padding: 20px;  
-    background-color: red;  
-}  
-  
-.formstyle  
-{  
-width: 300px;  
-height: 530px;  
-margin: auto;
-border: 3px solid black;
-border-radius: 5px;
-background-color:gray;
-padding: 20px;  
-}  
-  
-  
-  
-input  
-{  
-width: 20px;  
-background-color: solid gray;  
-color: black
-border: 3px solid gray;  
-    border-radius: 5px;  
-    padding: 26px;
-    margin: 5px;  
-    font-size: 15px;  
-}  
-  
-  
-#calc{  
-width: 250px;  
-border: 5px solid gray;  
-    border-radius: 3px;  
-    padding: 20px;  
-    margin: auto;  
-}  
+.content .textBox h2{
+	color: white;
+	font-size: 3em;
+	line-height: 1.0em;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.content .textbox h2 span{
+	font-size: 2em;
+}
+.content .textBox p{
+	margin-top: 10px;
+	color: white;
+}
+
+.content .textBox a{
+	display: inline-block;
+	margin-top: 40px;
+	padding: 8px 20px;
+	background: white;
+	color:black;
+	border-radius: 40px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.content .imgBox{
+	width: 600px;
+	display: flex;
+	padding-right: 50px;
+	margin-top: 50px;
+	justify-content: flex-end;	
+}
+.content .imgBox img{
+	max-width: 260px;
+}
+
+.thumb{
+	position: absolute;
+	bottom: -35%;
+	left: 50%;
+	transform: translateX(-30%);
+	display: flex;
+}
+.thumb li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.thumb li hover{
+	tranform: translateY(-15px);
+}
+
+.thumb li img{
+	max-width: 50px;
+}
+.sci{
+	position: absolute;
+	top: 50%;
+	bottom: 10px;
+	right: -120px;
+	padding: -10px;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.sci li{
+	list-style:none;
+}
+.sci li a {
+	display: inline-block;
+	filter: invert(1);
+	margin: 5px 0;
+	transform: scale(0.6);
+}
